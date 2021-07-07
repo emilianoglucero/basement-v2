@@ -1,5 +1,5 @@
 .wrapper {
-  flex: 10;
+  flex: 1;
 
   display: flex;
   flex-direction: row;
@@ -7,16 +7,16 @@
 
   align-items: center;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 92.64%);
-  mix-blend-mode: multiply;
-  transform: translateY(143px);
+  /* mix-blend-mode: multiply; */
+  transform: translateY(192px);
 
   padding: 0px 36px;
 }
 
 .title {
-  flex: 6;
+  flex: 5;
 
-  font-size: 4.25rem /* 68px */;
+  font-size: 4.15rem /* 68?px */;
   /* font-family: Everett; */
   font-style: normal;
   font-weight: normal;
@@ -38,7 +38,8 @@
 }
 
 .actions-wrapper {
-  flex: 2;
+  flex: 1;
+  flex-basis: 86px;
 
   display: flex;
   flex-direction: column;
@@ -56,12 +57,24 @@
 .see-more-wrapper {
   display: flex;
   justify-content: space-between;
+  /* gap: 24px; */
 }
+.see-more-arrow {
+  display: flex;
+  align-items: center;
+}
+
 .buy-wrapper {
   display: flex;
   justify-content: space-between;
+  /* gap: 24px; */
 }
 
 .buy {
   color: #ff0000;
+}
+
+.buy-arrow {
+  display: flex;
+  align-items: center;
 }

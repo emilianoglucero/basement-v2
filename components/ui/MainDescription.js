@@ -12,7 +12,7 @@ export const MainDescription = () => {
       </div>
       <div className={styles["actions-wrapper"]}>
         <div className={styles["see-more-wrapper"]}>
-          <div>
+          <div className={styles["see-more-arrow"]}>
             <Image
               src={"/images/ui/arrow-see-more.svg"}
               alt="Nike header logo"
@@ -21,10 +21,10 @@ export const MainDescription = () => {
               height={10}
             />
           </div>
-          <span>VER MÀS</span>
+          <span>VER MÁS</span>
         </div>
         <div className={styles["buy-wrapper"]}>
-          <div>
+          <div className={styles["buy-arrow"]}>
             <Image
               src={"/images/ui/arrow-buy.svg"}
               alt="Nike header logo"
