@@ -1,0 +1,67 @@
+.wrapper {
+  flex: 10;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  align-items: center;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 92.64%);
+  mix-blend-mode: multiply;
+  transform: translateY(143px);
+
+  padding: 0px 36px;
+}
+
+.title {
+  flex: 6;
+
+  font-size: 4.25rem /* 68px */;
+  /* font-family: Everett; */
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: 100%;
+  /* identical to box height, or 68px */
+
+  letter-spacing: -0.015em;
+  font-feature-settings: "ss01" on;
+}
+
+.description {
+  flex: 3;
+
+  font-size: 0.875rem /* 14px */;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 17px;
+}
+
+.actions-wrapper {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.875rem /* 30px */;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 30px */
+
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.see-more-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.buy-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy {
+  color: #ff0000;
+}

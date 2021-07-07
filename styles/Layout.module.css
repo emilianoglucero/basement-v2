@@ -1,0 +1,13 @@
+.wrapper {
+  font-family: "Everett";
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+
+  /* padding: 0px 36px; */
+
+  color: white;
+}

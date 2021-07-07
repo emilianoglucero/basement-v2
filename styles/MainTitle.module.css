@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+
+  /* font-size: 25.25rem; 404px */
+  font-size: 17.3rem;
+  font-family: "Tusker Grotesk";
+  font-family: "Tusker Grotesk 3700";
+  font-style: normal;
+  /* font-weight: 800; */
+
+  /* line-height: 588px; */
+  /* identical to box height */
+  padding: 0px 36px;
+
+  text-transform: uppercase;
+
+  color: white;
+  mix-blend-mode: screen;
+}
+
+.nike {
+  opacity: 0.9;
+  color: #ff0000;
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Tusker Grotesk";
+  font-weight: 100 900;
+  font-display: swap;
+  /* font-style: normal; */
+  /* font-named-instance: "Bold"; */
+  src: url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.otf") format("otf");
+  src: url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Tusker Grotesk 3700";
+  src: url("/fonts/TuskerGrotesk/3700Bold/TuskerGroteskTuskerGrotesk-3700Bold.eot");
+  src: url("/fonts/TuskerGrotesk/3700Bold/TuskerGrotesk-3700Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/TuskerGrotesk/3700Bold/TuskerGrotesk-3700Bold.woff2")
+      format("woff2"),
+    url("/fonts/TuskerGrotesk/3700Bold/TuskerGrotesk-3700Bold.woff")
+      format("woff"),
+    url("/fonts/TuskerGrotesk/3700Bold/TuskerGrotesk-3700Bold.ttf")
+      format("truetype"),
+    url("/fonts/TuskerGrotesk/3700Bold/TuskerGrotesk-3700Bold.svg#TuskerGrotesk-3700Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
