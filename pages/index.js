@@ -31,28 +31,35 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout>
-      <motion.div
-        className={"cursor " + cursorType}
-        style={{
-          translateX: cursorXSpring,
-          translateY: cursorYSpring,
-        }}
-      />
+    <>
       <Head>
         <title>Sitio oficial de Nike ES</title>
         <meta name="description" content="Sitio oficial de Nike ES" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/images/background/nike-photo-background.png"
+          as="image"
+        />
       </Head>
+      <Layout>
+        <motion.div
+          className={"cursor " + cursorType}
+          style={{
+            translateX: cursorXSpring,
+            translateY: cursorYSpring,
+          }}
+        />
 
-      <img
-        src="/images/background/nike-photo-background.png"
-        data-sampler="planeTexture"
-        alt="Nike Move to Zero background"
-      />
-      <Header />
-      <MainDescription />
-      <MainTitle />
-    </Layout>
+        <img
+          src="/images/background/nike-photo-background.png"
+          data-sampler="planeTexture"
+          alt="Nike Move to Zero background"
+        />
+        <Header />
+        <MainDescription />
+        <MainTitle />
+      </Layout>
+    </>
   );
 }
