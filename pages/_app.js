@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
           openGraph={{
             type: "website",
             locale: "en_IE",
-            url: "https://basement-challenge-emilianoglucero.vercel.app/",
+            url: "https://basement-v2-emilianoglucero.vercel.app/",
             site_name: "Nike Hero",
             description: "Nike Hero challenge for Basement Studio",
           }}

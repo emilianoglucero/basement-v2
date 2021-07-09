@@ -7,22 +7,23 @@
 
   align-items: center;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 92.64%);
-  /* mix-blend-mode: multiply; */
+
   transform: translateY(192px);
 
   padding: 0px 36px;
+
+  z-index: 1;
 }
 
 .title {
   flex: 5;
 
-  font-size: 4.15rem /* 68?px */;
-  /* font-family: Everett; */
+  font-size: 4.15rem;
+
   font-style: normal;
   font-weight: normal;
 
   line-height: 100%;
-  /* identical to box height, or 68px */
 
   letter-spacing: -0.015em;
   font-feature-settings: "ss01" on;
@@ -31,7 +32,7 @@
 .description {
   flex: 3;
 
-  font-size: 0.875rem /* 14px */;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: normal;
   line-height: 17px;
@@ -48,7 +49,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
-  /* or 30px */
 
   text-align: right;
   text-transform: uppercase;

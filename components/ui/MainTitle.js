@@ -37,12 +37,6 @@ export const MainTitle = () => {
       initial="initial"
       animate="animate"
     >
-      {/* <motion.div
-        classname={styles.animation}
-        variants={firstName}
-        initial="initial"
-        animate="animate"
-      > */}
       <motion.span variants={letter} className={styles.nike}>
         N
       </motion.span>
@@ -70,30 +64,5 @@ export const MainTitle = () => {
       <motion.span variants={letter}>O</motion.span>
       {/* </motion.div> */}
     </motion.section>
-  );
-};
-
-const AnimatedLetters = ({ title }) => (
-  <motion.span
-    className="row-title"
-    variants={banner}
-    initial="initial"
-    animate="animate"
-  >
-    {[...title].map((letter) => (
-      <motion.span className="row-letter" variants={letterAni} key={letter}>
-        {letter}
-      </motion.span>
-    ))}
-  </motion.span>
-);
-
-const BannerRowTop = ({ title }) => {
-  return (
-    <div className={"banner-row"}>
-      <div className="row-col">
-        <AnimatedLetters title={title} />
-      </div>
-    </div>
   );
 };

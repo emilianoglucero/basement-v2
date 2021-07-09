@@ -5,16 +5,13 @@
   align-items: flex-end;
   justify-content: center;
 
-  /* font-size: 25.25rem; 404px */
   font-size: 18.3rem;
-  /* font-family: "Tusker Grotesk"; */
+
   font-family: "Tusker Grotesk 3700";
   font-style: normal;
-  /* font-weight: 800; */
+
   letter-spacing: -5px;
 
-  /* line-height: 588px; */
-  /* identical to box height */
   padding: 0px 36px;
 
   text-transform: uppercase;
@@ -31,6 +28,6 @@
 } */
 
 .nike {
-  opacity: 0.8;
+  opacity: 1;
   color: #ff0000;
 }

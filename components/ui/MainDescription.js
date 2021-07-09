@@ -55,7 +55,6 @@ export const MainDescription = () => {
             <Image
               src={"/images/ui/arrow-see-more.svg"}
               alt="Nike header logo"
-              // layout="fill"
               width={70}
               height={10}
             />

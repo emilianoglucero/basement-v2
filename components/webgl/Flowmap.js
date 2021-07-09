@@ -8,8 +8,6 @@ import {
 } from "../../shaders/shaders";
 import { Vec2 } from "curtainsjs";
 
-// import "./flowmap.css";
-
 function Flowmap({ children }) {
   const mouse = useRef(new Vec2());
   const lastMouse = useRef(new Vec2());
@@ -188,11 +186,6 @@ function Flowmap({ children }) {
         // plane events
         onReady={onReady}
       >
-        {/* <img
-          src="/images/background/nike-photo-background.png"
-          data-sampler="planeTexture"
-          alt="Nike Move to Zero background"
-        /> */}
         {children}
       </Plane>
     </div>

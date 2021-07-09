@@ -18,7 +18,6 @@ export const Header = () => {
         <Image
           src={"/images/ui/nike-world-logos-header.svg"}
           alt="Nike header logo"
-          // layout="fill"
           width={146.41}
           height={37.07}
         />

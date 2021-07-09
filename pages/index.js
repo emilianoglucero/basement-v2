@@ -11,7 +11,6 @@ import { CursorContext } from "../context/cursor-context";
 
 export default function Home() {
   const { cursorType, cursorChangeHandler } = useContext(CursorContext);
-  console.log(cursorType);
 
   // cursor effect start
   const cursorX = useMotionValue(-100);
@@ -41,8 +40,8 @@ export default function Home() {
         }}
       />
       <Head>
-        <title>Nike</title>
-        <meta name="description" content="Nike Hero" />
+        <title>Sitio oficial de Nike ES</title>
+        <meta name="description" content="Sitio oficial de Nike ES" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
