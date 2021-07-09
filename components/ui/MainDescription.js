@@ -1,17 +1,56 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { useContext } from "react";
+import { CursorContext } from "../../context/cursor-context";
 import styles from "../../styles/MainDescription.module.css";
+
 export const MainDescription = () => {
+  const { cursorType, cursorChangeHandler } = useContext(CursorContext);
+
   return (
     <section className={styles.wrapper}>
-      <div className={styles.title}>Wmns Air Force 1 Crater</div>
-      <div className={styles.description}>
+      <motion.div
+        className={styles.title}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1,
+          delay: 2.2,
+        }}
+      >
+        Wmns Air Force 1 Crater
+      </motion.div>
+      <motion.div
+        className={styles.description}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1,
+          delay: 2.3,
+        }}
+      >
         <p>
           Una nueva propuesta para el ícono, la Nike Air Force 1 Crater combina
           el estilo clásico del básquetbol con nuevos materiales recuperados.
         </p>
-      </div>
-      <div className={styles["actions-wrapper"]}>
-        <div className={styles["see-more-wrapper"]}>
+      </motion.div>
+      <motion.div
+        className={styles["actions-wrapper"]}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1,
+          delay: 2.4,
+        }}
+      >
+        <div
+          className={styles["see-more-wrapper"]}
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        >
           <div className={styles["see-more-arrow"]}>
             <Image
               src={"/images/ui/arrow-see-more.svg"}
@@ -23,7 +62,11 @@ export const MainDescription = () => {
           </div>
           <span>VER MÁS</span>
         </div>
-        <div className={styles["buy-wrapper"]}>
+        <div
+          className={styles["buy-wrapper"]}
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        >
           <div className={styles["buy-arrow"]}>
             <Image
               src={"/images/ui/arrow-buy.svg"}
@@ -35,7 +78,7 @@ export const MainDescription = () => {
           </div>
           <span className={styles.buy}>COMPRAR</span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { DefaultSeo } from "next-seo";
 
-import "../styles/globals.css";
+import { motion } from "framer-motion";
+
 import { Curtains, Plane } from "react-curtains";
 import Flowmap from "../components/webgl/Flowmap";
+import CursorContextProvider from "../context/cursor-context";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const [showChild, setShowChild] = useState(false);
@@ -20,21 +23,22 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Curtains>
-      <DefaultSeo
-        title="Nike Hero"
-        description="Nike Hero challenge for Basement Studio."
-        openGraph={{
-          type: "website",
-          locale: "en_IE",
-          url: "https://basement-challenge-emilianoglucero.vercel.app/",
-          site_name: "Nike Hero",
-          description: "Nike Hero challenge for Basement Studio",
-        }}
-      />
-      {/* <BasicPlane /> */}
-      <Flowmap>
-        <Component {...pageProps} />
-      </Flowmap>
+      <CursorContextProvider>
+        <DefaultSeo
+          title="Nike Hero"
+          description="Nike Hero challenge for Basement Studio."
+          openGraph={{
+            type: "website",
+            locale: "en_IE",
+            url: "https://basement-challenge-emilianoglucero.vercel.app/",
+            site_name: "Nike Hero",
+            description: "Nike Hero challenge for Basement Studio",
+          }}
+        />
+        <Flowmap>
+          <Component {...pageProps} />
+        </Flowmap>
+      </CursorContextProvider>
     </Curtains>
   );
 }

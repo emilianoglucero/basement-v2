@@ -1,8 +1,19 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { useContext } from "react";
+import { CursorContext } from "../../context/cursor-context";
 import styles from "../../styles/Header.module.css";
+
 export const Header = () => {
+  const { cursorType, cursorChangeHandler } = useContext(CursorContext);
+
   return (
-    <header className={styles.wrapper}>
+    <motion.header
+      className={styles.wrapper}
+      initial={{ opacity: 0, y: -180 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ ease: "easeInOut", duration: 1.3, delay: 0.6 }}
+    >
       <div className={styles["header-logo"]}>
         <Image
           src={"/images/ui/nike-world-logos-header.svg"}
@@ -13,7 +24,11 @@ export const Header = () => {
         />
       </div>
       <nav className={styles["nav-wrapper"]}>
-        <ul className={styles.nav}>
+        <ul
+          className={styles.nav}
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        >
           <li>Colecciones</li>
           <li>Unite a Nosotros</li>
           <li>Nike Journal</li>
@@ -21,7 +36,11 @@ export const Header = () => {
           <li>SNKRS</li>
         </ul>
       </nav>
-      <ul className={styles["signup-wrapper"]}>
+      <ul
+        className={styles["signup-wrapper"]}
+        onMouseEnter={() => cursorChangeHandler("hovered")}
+        onMouseLeave={() => cursorChangeHandler("")}
+      >
         <li>Iniciar sesión</li>
         <li className={styles["signup-items"]}>
           <span>Unirte</span>
@@ -35,6 +54,6 @@ export const Header = () => {
           </div>
         </li>
       </ul>
-    </header>
+    </motion.header>
   );
 };

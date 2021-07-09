@@ -3,6 +3,7 @@
   flex-direction: row;
   flex: 3;
   align-items: flex-end;
+  justify-content: center;
 
   /* font-size: 25.25rem; 404px */
   font-size: 18.3rem;
@@ -20,12 +21,14 @@
 
   color: white;
   mix-blend-mode: screen;
-}
 
-.title {
-  display: inline-block;
   transform: scale(1, 1.24);
 }
+
+/* .title {
+  display: inline-block;
+  transform: scale(1, 1.24);
+} */
 
 .nike {
   opacity: 0.8;

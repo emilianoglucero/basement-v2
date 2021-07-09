@@ -25,12 +25,12 @@ body {
   font-family: var(--font-body);
   /*font-style: normal;
   font-weight: 500; */
-  cursor: url("/images/cursor/ellipse.svg"), pointer;
+  /* cursor: url("/images/cursor/ellipse.svg"), pointer;
   cursor: -webkit-image-set(
       url("/images/cursor/ellipse.svg") 1x,
       url("/images/cursor/ellipse.svg") 2x
     ),
-    pointer;
+    pointer; */
 }
 
 a {
@@ -40,7 +40,44 @@ a {
 
 * {
   box-sizing: border-box;
+  cursor: none;
 }
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: white;
+  z-index: 999;
+  pointer-events: none;
+
+  mix-blend-mode: difference;
+  background-color: white;
+
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  will-change: width, height, transform, border;
+}
+.cursor.hovered {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: white;
+  z-index: 999;
+  pointer-events: none;
+
+  mix-blend-mode: difference;
+  background-color: white;
+}
+
 /* curtains canvas container */
 
 .curtains-canvas {
